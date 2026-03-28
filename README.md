@@ -175,6 +175,10 @@ Password: admin
 **Resolution:** Terminated processes using `killall yes`
 **Prevention:** Alert-based monitoring for abnormal usage
 
+
+See detailed RCA here: [RCA.md](RCA.md)
+
+
 ---
 
 ## Scope for Future Improvements
