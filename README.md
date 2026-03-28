@@ -63,7 +63,7 @@ It captures system-level metrics, visualizes real-time performance, and triggers
 
 ---
 
-## 🖼️ Demo
+## Demonstration
 
 ### 🔹 Normal State (Low CPU Usage)
 ![Normal](screenshots/dashboard-normal.png)
@@ -80,7 +80,7 @@ It captures system-level metrics, visualizes real-time performance, and triggers
 
 ---
 
-## 🧪 Load Simulation
+## Load Simulation
 
 CPU stress was simulated using:
 
@@ -99,7 +99,7 @@ yes > /dev/null &
 
 ---
 
-## 🚨 Alert Logic
+## Alert Logic
 
 Alert is triggered based on:
 
@@ -186,7 +186,7 @@ Password: admin
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 Rupesh Das
 Computer Science Undergraduate | Systems & AI Enthusiast
