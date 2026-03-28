@@ -175,11 +175,15 @@ Password: admin
 
 ## Incident Simulation (RCA)
 
-**Incident:** High CPU usage spike
-**Cause:** Multiple infinite loop processes (`yes` command)
-**Detection:** Prometheus + Grafana alert (>5% for 1 min)
-**Resolution:** Terminated processes using `killall yes`
-**Prevention:** Alert-based monitoring for abnormal usage
+* **Incident:** High CPU usage spike.
+
+* **Cause:** Multiple infinite loop processes (`yes` command).
+
+* **Detection:** Prometheus + Grafana alert (>5% for 1 min).
+
+* **Resolution:** Terminated processes using `killall yes`.
+
+* **Prevention:** Alert-based monitoring for abnormal usage.
 
 
 See detailed RCA here: [RCA.md](RCA.md)
