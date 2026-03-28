@@ -107,6 +107,12 @@ Alert is triggered based on:
 CPU Usage > 5% for 1 minute
 ```
 
+CPU usage is computed using Prometheus metrics:
+
+100 - (avg by (instance) (rate(node_cpu_seconds_total{mode="idle"}[1m])) * 100)
+
+Alert condition:
+        CPU Usage > 5% for 1 minute
 
 ---
 

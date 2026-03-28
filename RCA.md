@@ -34,7 +34,13 @@ These processes continuously consumed CPU resources without termination.
 * Tool: Prometheus + Grafana
 * Alert condition:
 
-CPU > 5% for 1 minute
+        CPU > 5% for 1 minute
+
+The issue was detected using a Grafana alert based on CPU usage.
+
+CPU metric:
+
+100 - (avg by (instance) (rate(node_cpu_seconds_total{mode="idle"}[1m])) * 100)
 
 ---
 

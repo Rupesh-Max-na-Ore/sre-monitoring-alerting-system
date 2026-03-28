@@ -1,0 +1,11 @@
+groups:
+  - name: flask-alerts
+    rules:
+      - alert: HighRequestLatency
+        expr: rate(request_processing_seconds_sum[1m]) 
+              / rate(request_processing_seconds_count[1m]) > 0.1
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High request latency detected"
